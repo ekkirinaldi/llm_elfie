@@ -51,10 +51,10 @@ def main():
     )
     
     st.header("Ask Anything About Elfie.co")
-    message = st.text_area("customer message")
+    message = st.text_area("Example: 'Who is Elfie.co founders?'")
     
     if message:
-        st.write("Ask me anything about Elfie.co, such as 'who is Elfie.co founders?'")
+        st.write("Answer:")
         result = generate_response(message)
         st.info(result)
         
